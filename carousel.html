@@ -32,11 +32,139 @@
             font-family: "Inter", sans-serif;
             line-height: 1;
         }
+
+        img {
+            height: 200px;
+            border-radius: 8px;
+            transform: scale(1.5);
+            box-shadow: 0 12px 10px rgba(0, 0, 0, .25);
+        }
+
+        .carousel {
+            width: 800px;
+            margin: 100px auto;
+            background-color: #94d82d;
+            border-radius: 8px;
+            padding: 32px;
+            padding-left: 86px;
+            display: flex;
+            gap: 80px;
+            position: relative;
+            align-items: center;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            background-color: black;
+            color: #94d82d;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            margin-bottom: 4px;
+            /* padding-left: 15px; */
+            padding-top: 15px;
+        }
+
+        .testimonial-job {
+            font-size: 12px;
+            /* padding-left: 15px; */
+        }
+
+        .btn {
+            background-color: #fff;
+            border: none;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .btn-icon {
+            height: 24px;
+            width: 24px;
+            stroke: #94d82d;
+        }
+
+        .btn--left {
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, .25);
+        }
+
+        .btn--right {
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, .25);
+        }
+
+        .dots {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 0;
+            transform: translate(-50%, 32px);
+            display: flex;
+            gap: 12px;
+
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #fff;
+            border: 2px solid #94d82d;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dot--fill {
+            background-color: #94d82d;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="carousel">
+        <img src="maria.jpg" alt="Maria de Almeida" />
+        <blockquote class="testimonial">
+            <p class="testimonial-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, similique
+                distinctio consequatur dolorum maxime dolorem explicabo, quae, officiis aspernatur mollitia.
+            </p>
+            <p class="testimonial-author">Meria de Almeida</p>
+            <p class="testimonial-job">Senior Product Manager at EDP Comerical</p>
+        </blockquote>
+        <button class="btn btn--left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </button>
+        <button class="btn btn--right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button class="dot dot--fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
 </body>
 
 </html>
