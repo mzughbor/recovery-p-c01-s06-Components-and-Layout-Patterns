@@ -15,5 +15,8 @@
     <li>
         <a href="https://mzughbor.github.io/recovery-p-c01-s06-Components-and-Layout-Patterns/hero.html"> #5 Hero.html<a>
     </li>
+    <li>
+        <a href="https://mzughbor.github.io/recovery-p-c01-s06-Components-and-Layout-Patterns/email-app.html"> #6 Email-layout.html<a>
+    </li>
 </ul>
 </p>
